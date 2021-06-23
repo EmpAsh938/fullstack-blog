@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li,
+a {
+  text-decoration: none;
+  color: black;
+  list-style-type: none;
+}
+
+header {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  height: 80px;
+}
+
+header > nav {
+  height: 100%;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > nav > h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+header > nav > ul {
+  display: flex;
+  gap: 1em;
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  font-weight: 500;
+}
+
+section {
+  min-height: calc(100vh - 80px);
+  display: grid;
+  place-items: center;
+}
+
+section > div {
+  height: 80%;
+  width: 90%;
+  margin: auto;
+}
+
+/* Landing  */
+
+.landing > h3 {
+  font-family: "Poppins";
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  text-align: center;
+  font-weight: 400;
+  margin-top: 2em;
+  color: rgb(19, 102, 197);
+}
+
+/* Blogs Page  */
+
+.blogs > h3 {
+  font-size: 1.8rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  margin-bottom: 1em;
+}
+
+.blogs > a {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 1em 0.5em;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em 0;
+  cursor: pointer;
+}
+
+.blogs > a > h3 {
+  flex: 0.3;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: rgb(12, 74, 124);
+}
+
+.blogs > a > p {
+  flex: 0.7;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Create Blog  */
+
+.create-blog {
+  /* border: solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.create-blog > h2 {
+  font-size: clamp(1.8rem, 3vw, 3.5rem);
+  font-weight: 500;
+}
+
+.create-blog > input,
+textarea {
+  font-size: 1rem;
+  padding: 0.3em;
+}
+
+.create-blog > button {
+  width: 200px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: green;
+  border: none;
+  margin: auto;
+  border-radius: 5px;
+  padding: 0.5em 0;
+  cursor: pointer;
+}
+
+/* About  */
+
+/* Error  */
+.error {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 2em;
+  padding: 0 1em;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.error > a {
+  display: inline-block;
+  font-size: 1.5rem;
+  background: darkblue;
+  color: #fff;
+  padding: 0.5em;
+  border-radius: 5px;
+  margin-top: 1em;
+}
+
+@media screen and (min-width: 700px) {
+  .blogs > a {
+    align-items: center;
+
+    flex-direction: row;
+  }
+}
